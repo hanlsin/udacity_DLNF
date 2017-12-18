@@ -64,7 +64,7 @@ def trainPerceptronAlgorithm(X, y, learn_rate=0.01, num_epochs=25):
     return boundary_lines
 
 
-filepath = './Part1.NeuralNetworks/Lesson1.IntroToNN/data.csv'
+filepath = './Part1.NeuralNetworks/Lesson1.IntroToNN/gradient-descent/data.csv'
 # data = np.genfromtxt(filepath, delimiter=',')
 datafile = pd.read_csv(filepath, sep=',', header=None)
 data = np.array(datafile.values)

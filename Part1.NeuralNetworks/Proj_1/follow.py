@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 #pd.set_option('display.max_columns', 120)
 pd.set_option('display.width', 1000)
 
-data_path = "./udacity_DLNF/Part1.NeuralNetworks/Proj_1/Bike-Sharing-Dataset/hour.csv"
+data_path = "./udacity_DLNF/Part1.NeuralNetworks/Proj_1/first-neural-network/Bike-Sharing-Dataset/hour.csv"
 rides = pd.read_csv(data_path)
 # data is between 2011-01-01 ~ 2012-12-31 by "dteday"
 # - workingday = weekend is not workingday (0), the others are (1)

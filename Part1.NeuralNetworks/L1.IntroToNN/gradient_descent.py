@@ -22,7 +22,7 @@ def display(m, b, color='g--'):
     plt.plot(x, m * x + b, color)
 
 
-filepath = './udacity_DLNF/Part1.NeuralNetworks/Lesson1.IntroToNN/data.csv'
+filepath = './udacity_DLNF/Part1.NeuralNetworks/Lesson1.IntroToNN/gradient-descent/data.csv'
 data = pd.read_csv(filepath, header=None)
 X = np.array(data[[0, 1]])
 print("Number of Records = " + str(X.shape[0]))

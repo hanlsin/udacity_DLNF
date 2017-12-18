@@ -50,11 +50,12 @@ Building the model architecture
 #################
 '''
 from keras.models import Sequential
-from keras.layers import Dense, Activation
+from keras.layers import Dense, Activation, Dropout
 
 sa_model = Sequential()
 sa_model.add(Dense(32, input_dim=x_train.shape[1]))
 sa_model.add(Activation('relu'))
+sa_model.add(Dropout(0.5))
 sa_model.add(Dense(2))
 sa_model.add(Activation('softmax'))
 
@@ -73,6 +74,7 @@ score = sa_model.evaluate(x_test, y_test, verbose=0)
 print('Test Score:', score[0])
 print('Test Accuracy: ', score[1])
 
+'''
 import matplotlib.pyplot as plt
 
 # summarize history for accuracy
@@ -92,3 +94,4 @@ plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
 plt.show()
+'''
