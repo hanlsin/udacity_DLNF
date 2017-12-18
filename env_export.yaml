@@ -1,0 +1,12 @@
+name: dlnf
+channels:
+- defaults
+dependencies:
+- python=3
+- pandas
+- jupyter
+- matplotlib
+- keras
+- scikit-learn
+prefix: /Users/yp/anaconda3/envs/dlnf
+
